@@ -194,6 +194,8 @@ span {
   }
 }
 
+
+
 #map {
   display: block;
   height: 100%;
@@ -207,9 +209,31 @@ span {
   padding-bottom: 5%;
 }
 
+@media only screen and (max-width: 500px){
+  #topContacts,
+  #footerContacts {
+    text-align: left;
+    display: block;
+  }
+  #mapDiv {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  #role{
+    color: red;
+    clear: left;
+  }
+}
+
 @media only screen and (min-width: 750px) {
   #skillsH3,
   .biopic {
     display: block;
   }
+}
+.projectImage{
+  max-width: 20%;
+  max-height: 18%;
 }
